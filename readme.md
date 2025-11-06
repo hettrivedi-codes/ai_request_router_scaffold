@@ -1,10 +1,10 @@
-# AI Backend Scaffold
+# AI Backend Scaffold (FastAPI / Python)
 
 
 ## Setup
 1. Copy `.env.example` to `.env` and fill API keys.
-2. `npm install`
-3. `npm run start` or `docker-compose up --build`
+2. Install deps: `poetry install` or `pip install -r requirements.txt`.
+3. Run: `uvicorn src.main:app --reload --port 8000` or `docker-compose up --build`
 
 
 ## Usage
@@ -12,7 +12,7 @@ POST /api/ai/chat
 Content-Type: application/json
 
 
-Body:
+Body example:
 {
 "messages": [ { "role": "system", "content": "You are a helpful assistant." }, {"role":"user","content":"Hello"} ],
 "params": { "temperature": 0.5 }
