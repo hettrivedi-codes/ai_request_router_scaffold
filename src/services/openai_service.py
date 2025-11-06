@@ -1,5 +1,5 @@
 import httpx
-from config import settings
+from src.config import settings
 from utils.logger import logger
 
 OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"

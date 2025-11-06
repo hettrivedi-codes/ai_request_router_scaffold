@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from config import settings
-from routes.ai_router import router as ai_router
+from src.config import settings
+from src.routes.ai_router import router as ai_router
 import uvicorn
 
 app = FastAPI(title="AI Backend Scaffold (FastAPI)")
