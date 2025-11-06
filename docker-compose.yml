@@ -1,0 +1,14 @@
+#optional ollama service
+version: '3.8'
+services:
+api:
+build: .
+env_file: .env
+ports:
+- "8000:8000"
+
+
+# ollama:
+# image: ollama/ollama:latest
+# ports:
+# - "11434:11434"
